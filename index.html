@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./sytile.css">
+    <title>Login</title>
+</head>
+<body id="large-header">
+
+   <main>
+
+        <form>
+
+            <div class="user">
+                <img src="./img/icons-usuário.png" alt="icon user">
+            </div>
+
+            <div class="coluna">
+
+                <input type="text" placeholder="Email">
+                <span>@exemplo.com</span>
+
+            </div>
+            <div class="coluna">
+
+                <input type="password" id="password" placeholder="Senha" >
+                <img src="./img/olho.png" id="button" alt="mostrar senha">
+
+            </div>
+
+
+            <a href="#"><h3>Esqueceu a senha?</h3></a>
+
+
+            <div class="botão">Entrar</div>
+
+
+            <h4>Entre com</h4>
+
+
+            <div class="redes-sociais">
+
+                <a href="#"><img src="./img/google-importante.png" alt="icone google"></a> 
+                <a href="#"><img src="./img/linkedin-importante.png" alt="icone linkedin"></a> 
+                <a href="#"><img src="./img/facebook-importante.png" alt="icone facebook"></a> 
+
+            </div>
+
+
+            <div class="inscrição">
+
+                <a href="https://Talyson-Ferreira.github.io/formulario/" target="_blank"><span>Não possui conta? <strong>Inscreva-se</strong></span></a>
+
+            </div>
+
+        </form>
+
+
+
+
+    </main>
+
+     
+     <script>
+         let input= document.querySelector('#password'),
+         button = document.querySelector( '#button');
+ 
+         button.addEventListener('click', ()=>{
+             if(input.type=='password'){
+                 input.type='text';
+                 button.innerText='Ocultar'
+             }else{
+                 
+                 input.type='password';
+                 button.innerText='Exibir'
+             }
+         } )
+     </script>
+     <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+     <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+     <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+ </body>
+</html>
